@@ -1,0 +1,1 @@
+Vizsgálat megjelenitése máskép:true

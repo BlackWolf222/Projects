@@ -1,0 +1,55 @@
+PRIOR~02-Ha az AEE külső áramellátása megszűnik
+PRIOR~03-A pénztárgép blokkolt állapotba hozza magát(nem NAV blokkolás)
+PRIOR~04-(PRIOR~04)
+PRIOR~05-Külső áramforrása megszünt, NAV bejelentkezést szünetelteti
+PRIOR~06-A hordozható pénztárgép külső áramellátása megszünt, NAV bejelentkezést szünetelteti
+PRIOR~07-A pénztárgép azonnali bejelentkezésre vonatkozó felszólítást kapott
+PRIOR~08-az AEE saját áramforrásról üzemel, töltöttsége a kritikus szint(10%) alá csökkent
+CRI-Pénztárgép bekapcsolása
+CRO-Pénztárgép kikapcsolása
+POF-Az AEE a saját akkumulátoráról kezd működni(áramszünet kezdete)
+PIN-Az AEE külső áramforrásról folytatja a működését(áramszünet vége)
+BDN-Az AEE saját áramforrása lemerül
+RST-Az AEE a saját áramforrás lemerülése után újra működni kezd vagy működés közben újraindul
+BLS-A pénztárgépen észlelt hiba miatt a pénztárgép blokkolt állapotba került
+BLF-A pénztárgép hiba miatt történt blokkolt állapotának vége
+MGO-Üzenet küldése a NAV részére
+MGI-Üzenet fogadása a NAV tól
+TRMNOW-A NAV utasítja az AEE azonnali adatszolgáltatásra, a jelzett sorszámnál nagyobb állomány küldésére
+ACK~00~..........-Visszaigazolás sikertelen bejelentkezésről
+ACK~02~..........-Sikeresen fogadott naplófájl nyugta és következő naplófájl küldési utasítás
+ACK~03~..........-Sikeresen fogadott naplófájl, fogadását követően az SSL kapcsolat bontása
+ACK~04~..........-Sikeresen fogadott üzenet, fogadását követően az SSL kapcsolat bontása
+ACK~50~..........-Nem érvényes üzembe helyezési kód
+ACK~58~..........-Érvénytelen engedélyszám vagy szoftver verzió
+ACK~60~..........-Üzemeltetés befejezése nem hajtható végre
+ACK~61~..........-Üzemeltetés befejezési folyamat sikertelen
+ACK~64~..........-Az üzemeltetés befejezése nyugtázva
+ACK~65~..........-Üzemeltetés folytatása nem lehetséges
+BLO=0-normál állapot (nincs blokkolva és nincs sikertelen blokkolás)
+BLO=1-NAV által blokkolva
+BLO=2-NAV általi blokkolás sikertelen
+BLO=3-NAV általi blokkolás feloldása sikertelen
+BLO=4-A pénztárgép önmagát blokkolta
+FRW=7-szoftver frissítés sikertelen
+UNBLCK-Blokkolás feloldása
+PTGBLCK~..........-Blokkoló üzenet
+ANS~.........~31~..........-Blokkolás végrehajtása sikertelen
+ANS~.........~32~..........-Blokkolás feloldása sikertelen
+ANS~.........~33~..........-adózói adatok frissítése sikertelen
+ANS~.........~34~..........-adózói adatok fogadása sikertelen
+ANS~.........~35~..........-ÁFA tábla frissítése sikertelen
+ANS~.........~36~..........-az üzenet értelmezhetetlen
+ANS~.........~37~..........-Sikertelen fájlküldés
+ANS~.........~38~..........-kapcsolat felvételi gyakoriság beállítás végrehajtása sikertelen
+ANS~.........~40~..........-az átszemélyesítés sikertelen
+ANS~.........~42~..........-Alaphelyzetbe állítás sikertelen
+ANS~.........~43~..........-tanúsítvány fogadása sikertelen
+ANS~.........~44~..........-maximális naplóállomány méret beállítása sikertelen
+ANS~.........~46~..........-nyomtatandó üzenet vétele sikertelen
+ANS~.........~48~..........-korábbi üzemeltető naplóállományainak törlése sikertelen
+ANS~.........~49~..........-euró átállás végrehajtása sikertelen
+ANS~.........~50~..........-Szoftverszelet CRC hiba másodszor
+ANS~.........~51~..........-Szoftver S.A256 hiba másodszor
+ANS~.........~52~..........-Sikertelen szoftver frissítés, az AEE visszaáll az előző verzióra
+ANS~.........~53~..........-UPDCLR utasításban megjelölt folyamat nem létezik
