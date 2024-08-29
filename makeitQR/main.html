@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MakeItQR</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="maindiv">
+        <div id="secdiv">
+            <p id="para">Enter your text or URL</p>
+            <input type="text" id="txtinput">
+            <div id="imgBox">
+                <img src="" id="qrImage">
+            </div>
+            <input type="button" value="Generate QR Code" id="button" onclick="generateQR()">
+        </div>
+    </div>
+    <script>
+        let imgBox = document.getElementById("imgBox");
+        let qrImage = document.getElementById("qrImage");
+        let qrText = document.getElementById("txtinput");
+
+        function generateQR(){
+            qrImage.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + qrText.value;
+        }
+    </script>
+</body>
+</html>

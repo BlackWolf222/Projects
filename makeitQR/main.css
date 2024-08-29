@@ -1,0 +1,43 @@
+body{
+    background-color: #262a30;
+}
+
+#maindiv{
+    border-radius: 15px;
+    background-color: white;
+    width: 350px;
+    min-height: 250px;
+    height: auto;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+}
+
+#para{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    text-align: center;
+}
+
+#secdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+input {
+    border: 1px solid grey;
+    border-radius: 6px;
+    width: 80%;
+    height: 40px;
+}
+
+#button{
+    background-color: #4c5cf8;
+    color: white;
+    font-weight: bold;
+    margin: 15px;
+}
